@@ -9,7 +9,8 @@
 Si7020 sensor;
 const String temperatureTopicName = "temperature";
 const String humidityTopicName = "humidity";
-long DELAY_BETWEEN_READINGS = 60000;
+//setting default to 5 minute increments
+long DELAY_BETWEEN_READINGS = 300000;
 const long STARTUP_DELAY = 2000;
 
 double rh_round;
