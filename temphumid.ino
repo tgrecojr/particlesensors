@@ -20,11 +20,6 @@ STARTUP(WiFi.selectAntenna(ANT_EXTERNAL));
 
 void setup(){
     
-    //location = getLocationFromDeviceID(System.deviceID());
-    //temperatureTopicName = "temperature/" + location;
-    //humidityTopicName = "humidity/" + location;
-    //temperatureTopicName = "temperature";
-    //humidityTopicName = "humidity";
     Particle.variable("temperature", th_round);
     Particle.variable("humidity", rh_round);
     Particle.variable("delay", DELAY_BETWEEN_READINGS);
@@ -81,16 +76,3 @@ int setDelay(String delay){
     DELAY_BETWEEN_READINGS = theDelay;
     return 1;
 }
-
-
-//String getLocationFromDeviceID(String deviceID){
-//    
-//    String loc;
-//    if (deviceID ==  "20002a000247343337373738"){
-//        loc = "BASEMENT";
-//    }
-//    else{
-//        loc = "UNKNOWN";
-//    }
-//    return loc;
-//}
